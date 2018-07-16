@@ -78,7 +78,10 @@ class App extends Component {
 <div className="App">
   <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
-    <h1 className="App-title">YB Memes</h1>
+    <h1 className="App-title">
+    MommaMemes
+    </h1>
+    <div>Freshest Memes daily... Just How Momma Use to Make! </div>
   </header>
   {this.memesList()}
 </div>
