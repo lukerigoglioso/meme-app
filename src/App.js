@@ -81,7 +81,7 @@ class App extends Component {
     <h1 className="App-title">
     MommaMemes
     </h1>
-    <div>Freshest Memes daily... Just How Momma Use to Make!</div
+    <div>Freshest Memes daily... Just How Momma Use to Make!</div>
   </header>
   {this.memesList()}
 </div>
