@@ -23,10 +23,6 @@ class App extends Component {
 
   memesList() {
       var listItems = this.state.response.map((items) => items.data.preview.images.map((memeUrl)=>
-      // <Col xs={6} md={4}>
-      //   <Image src={memeUrl.source.url} responsive />
-      // </Col>
-
       <div class="column is-one-third">
                     <div class="card large">
                         <div class="card-image">
@@ -36,10 +32,9 @@ class App extends Component {
                         </div>
                       </div>
                 </div>
-
     ))
       return (
-        <ul>{listItems}</ul>
+        <div class="columns is-multiline">{listItems}</div>
       );
     }
 
