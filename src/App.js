@@ -34,7 +34,7 @@ class App extends Component {
                 </div>
     ))
       return (
-        <div class="columns is-multiline">{listItems}</div>
+        <div class="columns is-multiline wrapper">{listItems}</div>
       );
     }
 
@@ -80,12 +80,7 @@ class App extends Component {
     <img src={logo} className="App-logo" alt="logo" />
     <h1 className="App-title">YB Memes</h1>
   </header>
-
-<div class="row columns">
-<section class="hero is-info is-medium is-bold">
   {this.memesList()}
-</section>
-  </div>
 </div>
     );
   }
