@@ -31,7 +31,7 @@ class App extends Component {
 
   updateMemeUrl() {
     const stateResp = this.state.response
-    var arr = []
+    const arr = []
     const divArr = []
 
 
@@ -43,17 +43,37 @@ class App extends Component {
         console.log(arr)
         //add to div array
         for (var j = 0; j < arr.length; j++) {
-          divArr.push(
-            <div class="column is-one-third">
-                    <div class="card small">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src={arr[j]} alt="Image" />
-                            </figure>
+          var temp = arr[j]
+
+          if (temp.includes("jpg")) {
+            console.log(urlConcatJPG)
+            divArr.push(
+              <div class="column is-one-third">
+                      <div class="card small">
+                          <div class="card-image">
+                              <figure class="image">
+                                  <img src={arr[j]} alt="Image" />
+                              </figure>
+                          </div>
                         </div>
-                      </div>
-                </div>
-              )
+                  </div>
+                )
+          }
+          else{
+            var urlConcatJPG = temp + ".jpg"
+            console.log(urlConcatJPG)
+            divArr.push(
+              <div class="column is-one-third">
+                      <div class="card small">
+                          <div class="card-image">
+                              <figure class="image">
+                                  <img src={urlConcatJPG} alt="Image" />
+                              </figure>
+                          </div>
+                        </div>
+                  </div>
+                )
+          }
           console.log(arr[j])
         }
       }
