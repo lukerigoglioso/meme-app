@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import 'bulma/css/bulma.css';
 import axios from 'axios'
-import validator from 'validate-image-url'
 
 
 class App extends Component {
