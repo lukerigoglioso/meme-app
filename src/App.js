@@ -4,7 +4,6 @@ import './App.css';
 import MemeCard from './components/MemeCard'
 import 'bulma/css/bulma.css';
 import axios from 'axios'
-import validator from 'validate-image-url'
 
 class App extends Component {
 
@@ -35,7 +34,7 @@ class App extends Component {
       </header>
 
       <MemeCard/>
-      
+
     </div>);
 
   }
