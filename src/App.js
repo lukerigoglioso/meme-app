@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import MemeCard from './components/MemeCard'
 import 'bulma/css/bulma.css';
-import axios from 'axios'
 
 
 class App extends Component {
